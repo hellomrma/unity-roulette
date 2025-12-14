@@ -25,16 +25,19 @@ public class RouletteController : MonoBehaviour
             isRotating = true;
             isRotateEnded = false;
 
-            rotateSpeed = Random.Range(7f, 15f);
+            rotateSpeed = Random.Range(15f, 30f);
 
             // Unity Random 함수
             // float Random.Range(float minInclusive, float maxInclusive);
             // int Random.Range(int minInclusive, int maxExclusive);
+
+
+
         }
         transform.Rotate(0,0, rotateSpeed);
 
         rotateSpeed *= 0.98f;
-        //Debug.Log(rotateSpeed);
+        Debug.Log(rotateSpeed);
 
         if (rotateSpeed <= 0.05f)
         {
