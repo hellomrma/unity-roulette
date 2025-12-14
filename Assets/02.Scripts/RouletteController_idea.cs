@@ -17,7 +17,7 @@ public class RouletteController_idea : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && rotateSpeed == 0f)
         {
-            rotateSpeed = Random.Range(50f, 100f);
+            rotateSpeed = Random.Range(15f, 30f);
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -33,10 +33,6 @@ public class RouletteController_idea : MonoBehaviour
         if (rotateSpeed <= 0.05f)
         {
             rotateSpeed = 0f;
-        }
-        else
-        {
-
         }
     }
 }
